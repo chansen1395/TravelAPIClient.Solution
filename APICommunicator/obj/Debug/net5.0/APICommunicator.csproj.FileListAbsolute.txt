@@ -1,0 +1,8 @@
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.csprojAssemblyReference.cache
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.AssemblyInfoInputs.cache
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.AssemblyInfo.cs
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.csproj.CoreCompileInputs.cache
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.RazorAssemblyInfo.cache
+C:\Users\thesu\Desktop\Epicodus\CWEEK6\APICommunicator.Solution\APICommunicator\obj\Debug\net5.0\APICommunicator.RazorAssemblyInfo.cs
