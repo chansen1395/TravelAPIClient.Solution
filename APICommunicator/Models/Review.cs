@@ -20,12 +20,10 @@ namespace TravelAPIClient.Models
     {
       var apiCallTask = ApiHelper.GetAll();
       var result = apiCallTask.Result;
-      System.Console.WriteLine("RESUUUUUUUUUUUUUUUUULTTTTTT!: " + result.GetType());
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
-      // JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
-      System.Console.WriteLine("JJJJJJJJJJJJJJJJJJJJJJJJSON" + jsonResponse.GetType());
       List<Review> reviewList = JsonConvert.DeserializeObject<List<Review>>(jsonResponse.ToString());
+
 
       return reviewList;
     }
