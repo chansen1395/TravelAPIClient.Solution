@@ -4,17 +4,51 @@ using System.Linq;
 using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using TravelAPIClient.Models;
 
 namespace TravelAPIClient.Controllers
 {
-  public class ReviewsController : ControllerBase
+  public class ReviewsController : Controller
   {
-    [HttpGet("/")]
     public IActionResult Index()
     {
+      System.Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
       var allReviews = Review.GetReviews();
       return View(allReviews);
+    }
+
+        [HttpPost]
+    public IActionResult Index(Review review)
+    {
+      Review.Post(review);
+      return RedirectToAction("Index");
+    }
+
+    public IActionResult Details(int id)
+    {
+      var review = Review.GetDetails(id);
+      return View(review);
+    }
+
+    public IActionResult Edit(int id)
+    {
+      var review = Review.GetDetails(id);
+      return View(review);
+    }
+
+    [HttpPost]
+    public IActionResult Details(int id, Review review)
+    {
+      review.ReviewId = id;
+      Review.Put(review);
+      return RedirectToAction("Details", id);
+    }
+
+    public IActionResult Delete(int id)
+    {
+      Review.Delete(id);
+      return RedirectToAction("Index");
     }
   }
 }
