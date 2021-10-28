@@ -1,20 +1,21 @@
-@* @{
+@{
     ViewData["Title"] = "Details";
 }
 
-<h1>Animal Info:</h1>
+<h1>Review Info:</h1>
 <ul>
-    <li>ID: @Model.AnimalId</li>
-    <li>Name: @Model.Name</li>
-    <li>Species: @Model.Species</li>
-    <li>Age: @Model.Age</li>
-    <li>Gender: @Model.Gender</li>
+    <li>ID: @Model.ReviewId</li>
+    <li>User: @Model.User</li>
+    <li>Country: @Model.Country</li>
+    <li>City: @Model.City</li>
+    <li>Date: @Model.Date</li>
+    <li>Rating: @Model.Rating</li>
 </ul>
 <br>
 
-<a href="/Animals/Edit/@(Model.AnimalId)"><p>Edit</p></a>
+<a href="/Reviews/Edit/@(Model.ReviewId)"><p>Edit</p></a>
 <br>
 
-<a href="/Animals"><p>Return</p></a>
+<a href="/Reviews"><p>Return</p></a>
 
-<a href="/Animals/Delete/@(Model.AnimalId)"><p>DELETE ANIMAL</p></a> *@
+<a href="/Reviews/Delete/@(Model.ReviewId)"><p>DELETE REVIEW</p></a>
